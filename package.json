@@ -1,0 +1,23 @@
+{
+  "name": "www.mabelticketing.co.uk",
+  "version": "0.0.0",
+  "description": "",
+  "main": "mabel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "grunt"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "connect": "^3.4.0",
+    "grunt": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-jade": "*",
+    "jade": "*",
+    "serve-static": "*"
+  }
+}
