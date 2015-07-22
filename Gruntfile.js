@@ -3,7 +3,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'assets/css/main.css': 'assets/css/main.scss'
+                    'assets/css/main.css': 'assets/scss/main.scss'
                 }
             }
         },
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
                 files: ["views/**/*.jade"]
             },
             scripts: {
-                files: ['assets/css/main.scss'],
+                files: ['assets/scss/main.scss'],
                 tasks: ['sass']
             }
         },

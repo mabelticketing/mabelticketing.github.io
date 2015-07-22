@@ -3,27 +3,83 @@ html
 		title Mabel Ticketing
 		link(rel="stylesheet", type="text/css", href="/assets/css/main.css")
 
-
-
 	body
+		//- GitHub banner
+		a(href="https://github.com/mabelticketing/mabel")
+			img(style="position: absolute; top: 0; right: 0; border: 0;",
+				src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67",
+				alt="Find me on GitHub",
+				data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png")
+		.slide.slide-full(style="background: url(/assets/img/background.JPG); background-size: cover;")
+			.container
+				h1 Mabel
+				h2 A May Ball ticketing system.
+				p #[strong Mabel] is a modern ticketing system designed especially for 
+					| your May Ball, June Event or Garden Party. It was built from the 
+					| ground up to be easy to use while giving your committee the power to
+					| quickly do everything they need to.
+		.slide
+			.container
+				h3 But I already have a ticketing system!
+				p Almost every committee has their own legacy system, passed on from one year to the next long after the original author has left. Nearly all of them have bugs and quirks, making the ticket booking experience error-prone or unreliable. In some cases, ticketing system bugs may actually be dangerous, as malicious users circumvent security systems.
+				p Even if you’ve never had a problem with your ticketing system before, very few committees have the ability to update it in-house when new technologies appear. Can your ticketing system receive immediate online payments? Could it tie into electronic wristbands or a custom app for your event? Why waste your committee’s time by integrating these features when somebody else has already done it?
+				hr
+				h3 What can mabel do?
+				.row
+					.col-md-4
+						h4 Intelligent authentication
+						p Mabel can use any authentication system you like. Raven support is built-in, and it is easy to extend Mabel to handle alumni or your college's own login system.
+					.col-md-4
+						h4 Customisable ticket types
+						p Queue-jump? Dining? Punting? Early bird? Our admin panel allows you to create as many ticket types as you can think of.
+					.col-md-4
+						h4 Changeable ticketing/ticket permissions /// Separate release dates (combine two of them)
+						p Only want students from your college purchasing dining tickets? We have a flexible system for you to choose who can buy which tickets.
+						p If you want to release tickets to your college before the rest of the university, you can!
+				.row
+					.col-md-4
+						h4 Make Mabel yours
+						p It's easy to style Mabel to look exactly the way you want to, so your event’s theme can shine through when your guests buy their tickets.
+					.col-md-4
+						h4 Rock-solid speed
+						p Mabel will handle hundreds of simultaneous users without breaking a sweat. So you can rest easy on launch night knowing nothing can go wrong.
+					.col-md-4
+						h4 On the night
+						p No one likes queueing, which is why we’ve integrated a super fast ticket scanning system. Your guests will be through the door in record time.
+				h3 Using Mabel
+				p There are three ways to use Mabel. You can obtain the source code for free from our #[a(href="https://github.com/mabelticketing/mabel") GitHub repository] - but then you’re on your own. If your committee lacks the technical capacity to do that, we can do it for you instead.
+		
 		.container
-			a(href="https://github.com/mabelticketing/mabel")
-				img(style="position: absolute; top: 0; right: 0; border: 0;",
-					src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67",
-					alt="Find me on GitHub",
-					data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png")
-			h1 Mabel
-			p.intro A May Ball ticketing system.
-			section
-				p #[b Mabel] is a Raven-authenticated ticketing system. It allows high flexibility whilst being easy to use.
-				h2 What is included?
-				p fjsgldjgh sdkljg sdjk gsdjklf gjkh such as:
-				ul
-					li #[b Customisable ticket types] Queue-jump tickets? Charitable donations? Our admin panel allows your ticketing officer to create as many ticket types as you can think of.
-					li #[b Changeable ticketing permissions] Only want students from your college purchasing dining tickets? We have a flexible system for you to choose who can buy which tickets.
-					li #[b Separate ticket release dates] If you want to release tickets to your college first, you can!
-					li #[b Intelligent authentication] Raven authentication is used to determine ticketholder's colleges. Manual fallback for alumni or those without a raven account.
-				h2 Using our system
-				p There are two methods of using Mabel. You can obtain the source code #[b for free] via our #[a(href="https://github.com/Hephistocles/mabel") GitHub repository] or you can have us implement the system for you. We charge £X per event. If you decide to run the code yourselves, perhaps consider donating.. here is our justgiving page
-			footer
-				&copy; Copyright Mabel Ticketing 2015.
+			.row
+				.col-md-2 Name
+				.col-md-10 Hi
+					//- .row
+					//- 	.col-md-4 a 
+					//- 	.col-md-4 b
+					//- 	.col-md-4 c
+
+
+		.container
+			.row
+				.col-xs-3
+				.col-xs-3
+					p Community
+					p Mabel is released under the open-source GPL license. That means you can use the code for free, as long as you share any modifications you make back with us. 
+					p If you’re not making modifications, please consider making a donation to support the project’s ongoing development. [link to easy to use donation giver page - suggested donation should be listed on that page]
+				.col-xs-3
+					p Basic
+					p We can set up the system for you, and show you how to use it.[say some more about support]
+				.col-xs-3
+					p Premium
+					p We will set up the system and make custom modifications for you as required. This also includes the ability to receive online payments, so your committee can receive their money a few days after launch night.
+		.container
+			h2 Creators
+			.col-md-6(style="text-align:center;")
+				img.img-circle.face(src="/assets/img/chris.jpg")
+			.col-md-6(style="text-align:center;")
+				img.img-circle.face(src="/assets/img/tom.jpg")
+			p Christopher (on hover, display picture) and Thomas are Computer Scientists at Emmanuel College. Both love pretty things, hate wasted time and can’t get enough JavaScript.
+		.container
+			p Want to know more? Drop us an email at hello@mabelticketing.co.uk
+		footer
+			&copy; Copyright Mabel Ticketing 2015.
