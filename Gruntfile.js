@@ -16,7 +16,7 @@ module.exports = function(grunt) {
                 files: ["views/**/*.jade"]
             },
             scripts: {
-                files: ['assets/scss/main.scss'],
+                files: ['assets/scss/**/*.scss'],
                 tasks: ['sass']
             }
         },
