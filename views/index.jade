@@ -24,36 +24,50 @@ html
 			section#intro
 				.container
 					h2 But I already have a ticketing system!
-					p Almost every committee has their own legacy system, passed on from one year to the next long after the original author has left. Nearly all of them have bugs and quirks, making the ticket booking experience error-prone or unreliable. In some cases, ticketing system bugs may actually be dangerous, as malicious users circumvent security systems.
-					p Even if you’ve never had a problem with your ticketing system before, very few committees have the ability to update it in-house when new technologies appear. Can your ticketing system receive immediate online payments? Could it tie into electronic wristbands or a custom app for your event? Why waste your committee’s time by integrating these features when somebody else has already done it?
-			section
+					.row
+						.col-md-6
+							p Almost every committee has their own legacy system, passed on from one year to the next long after the original author has left. Nearly all of them have bugs and quirks, making the ticket booking experience error-prone or unreliable. In some cases, ticketing system bugs may actually be dangerous, as malicious users circumvent security systems.
+						.col-md-6
+							p Even if you’ve never had a problem with your ticketing system before, very few committees have the ability to update it in-house when new technologies appear. Can your ticketing system receive immediate online payments? Could it tie into electronic wristbands or a custom app for your event? Why waste your committee’s time by integrating these features when somebody else has already done it?
+			section#what
 				.container
 					h2 What can Mabel do?
 					.row
-						.col-sm-3
-							h3 Intelligent Authentication
+						.col-sm-3.whatbox
+							span.fa.fa-lock
+							h4 Intelligent Authentication
 							p Mabel can use any authentication system you like. Raven support is built-in, and it is easy to extend Mabel to handle alumni or your college's own login system.
-						.col-sm-3
-							h3 Customisable ticket types
+						.col-sm-3.whatbox
+							span.fa.fa-ticket
+							h4 Customisable ticket types
 							p Queue-jump? Dining? Punting? Early bird? Our admin panel allows you to create as many ticket types as you can think of.
-						.col-sm-3
-							h3 Changeable ticketing permissions
+						.col-sm-3.whatbox
+							span.fa.fa-cogs
+							h4 Changeable ticketing permissions
 							p Only want students from your college purchasing dining tickets? We have a flexible system for you to choose who can buy which tickets.
+						.col-sm-3.whatbox
+							span.fa.fa-mobile
+							h4 Mobile
+							p We optimise Mabel for mobile, so students can book their tickets from the comfort of the college library.
 					.row
-						.col-sm-3
-							h3 Separate ticket release dates
+						.col-sm-3.whatbox
+							span.fa.fa-calendar-check-o
+							h4 Separate ticket release dates
 							p If you want to release tickets to your college before the rest of the university, you can!
-						.col-sm-3
-							h3 Make Mabel yours
+						.col-sm-3.whatbox
+							span.fa.fa-paint-brush
+							h4 Make Mabel yours
 							p It’s easy to style Mabel to look exactly the way you want to, so your event’s theme can shine through when your guests buy their tickets.
-						.col-sm-3
-							h3 Rock-solid speed
+						.col-sm-3.whatbox
+							span.fa.fa-rocket
+							h4 Rock-solid speed
 							p Mabel will handle hundreds of simultaneous users without breaking a sweat. So you can rest easy on launch night knowing nothing can go wrong.
-						.col-sm-3
-							h3 On the night
+						.col-sm-3.whatbox
+							span.fa.fa-moon-o
+							h4 On the night
 							p No one likes queueing, which is why we’ve integrated a super fast ticket scanning system. Your guests will be through the door in record time.
 
-			section
+			section#using
 				.container
 					h2 Using Mabel
 					p There are three ways to use Mabel. You can obtain the source code for free from our #[a(href="#") GitHub repository] - but then you’re on your own. If your committee lacks the technical capacity to do that, we can do it for you instead.
@@ -89,18 +103,18 @@ html
 					h2 Creators
 					.row
 						.col-sm-12.col-md-3.col-md-offset-3.thumb
+							img(src="/assets/img/tom.jpg")
+						.col-sm-12.col-md-3.thumb
 							img(src="/assets/img/chris.jpg")
 
 
-						.col-sm-12.col-md-3.thumb
-							img(src="/assets/img/tom.jpg")
 					.row
 						.col-sm-12.col-md-6.col-md-offset-3.tagline
 							p Christopher and Tom are Computer Scientists at Emmanuel College. Both love pretty things, hate wasted time and can’t get enough JavaScript.
-			section
-				.container.big-text
-					p Want to know more? Drop us an email at #[a(href="mailto:hello@mabelticketing.co.uk") hello@mabelticketing.co.uk]
+			section#more
+				.container
+					p Want to learn more? Drop us an email at #[a.mail-link(href="mailto:hello@mabelticketing.co.uk") hello@mabelticketing.co.uk]
 
 			footer
 				.container
-					p &copy; Copyright Mabel Ticketing 2015.
+					p #[a(href="https://github.com/mabelticketing") GitHub] &middot; #[a(href="http://www.gnu.org/licenses/gpl-2.0.txt") License] &middot; &copy; Copyright Mabel Ticketing 2015.

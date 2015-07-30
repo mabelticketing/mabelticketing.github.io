@@ -84,11 +84,29 @@ footer {
   }
 }
 
-.big-text {
+
+// TODO: probably unnecessary
+@mixin slide-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#more {
   font-size: 2em;
   text-align: center;
+  @include slide-padding;
+  background-color: $col--mabel-orange;
+  p {
+    font-family: $font--headings;
+    color: $col--black;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 }
 
+a.mail-link {
+  text-decoration: underline;
+  color: $col--black !important;
+}
 
 
 
@@ -97,9 +115,33 @@ footer {
 
 #intro {
   background-color: $col--very-light-grey;
+  @include slide-padding;
+}
+
+#what {
+  @include slide-padding;
+}
+
+#using {
+  @include slide-padding;
+  background-color: $col--very-light-grey;
 }
 
 
+
+
+
+.whatbox {
+  text-align: center;
+  span {
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  h4 {
+  }
+}
 
 
 
