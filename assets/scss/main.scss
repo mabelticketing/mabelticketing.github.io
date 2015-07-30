@@ -20,6 +20,9 @@ h1, h2, h3, h4 {
   font-family: $font--headings;
 }
 
+h2 {
+  margin-top: 0;
+}
 
 section, footer {
   width: 100%;
@@ -28,11 +31,15 @@ section, footer {
 footer {
   background-color: $col--dark-grey;
   color: $col--light-grey;
-  height: 80px;
+  height: 40px;
   p {
     text-align: center;
-    margin: 0;
-    font-size: 1.2em;
+    margin: 17px;
+    font-size: 12px;
+  }
+  a, a:hover, a:active {
+    color: $col--light-grey;
+    font-weight: $font-weight--normal;
   }
 }
 
@@ -171,6 +178,15 @@ a.ghost-button {
 
 
 
+a {
+  text-decoration: none;
+  font-weight: $font-weight--bold;
+  color: $col--mabel-orange;
+}
+a:hover, a:active {
+  color: $col--mabel-orange;
+  text-decoration: underline;
+}
 
 
 
