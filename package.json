@@ -5,18 +5,19 @@
   "main": "mabel.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "pre-start": "bower install",
     "start": "grunt"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "bower": "^1.4.1",
     "connect": "^3.4.0",
     "grunt": "*",
+    "grunt-contrib-jade": "*",
     "grunt-contrib-sass": "*",
     "grunt-contrib-watch": "*",
-    "grunt-contrib-jade": "*",
     "jade": "*",
     "serve-static": "*"
   }
