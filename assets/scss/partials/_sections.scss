@@ -1,0 +1,83 @@
+/* sections */
+
+header, section, footer {
+  width: 100%;
+}
+
+.titlebox {
+  @include center-content;
+}
+
+.mabel-logo {
+  width: 225px;
+  height: 225px;
+  border: 2px solid $col--black;
+  border-radius: 50%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+
+  h1 {
+    margin: 0;
+    font-size: 4em;
+    color: $col--black;
+    text-shadow: 2px 2px 0px $col--mabel-orange;
+  }
+}
+
+.center-fix {
+  margin: auto;
+  display: inline-block;
+}
+
+#intro {
+  background-color: $col--very-light-grey;
+  @include slide-padding;
+}
+
+#what {
+  @include slide-padding;
+}
+
+#using {
+  @include slide-padding;
+  background-color: $col--very-light-grey;
+}
+
+#creators {
+  @include slide-padding;
+}
+
+#more {
+  font-size: 2em;
+  text-align: center;
+  @include slide-padding;
+  background-color: $col--mabel-orange;
+  p {
+    font-family: $font--headings;
+    color: $col--black;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  a.mail-link {
+    text-decoration: underline;
+    color: $col--black !important;
+  }
+}
+
+footer {
+  background-color: $col--dark-grey;
+  color: $col--light-grey;
+  height: 40px;
+  p {
+    text-align: center;
+    margin: 17px;
+    font-size: 12px;
+  }
+  a, a:hover, a:active {
+    text-decoration: underline;
+    color: $col--light-grey;
+    font-weight: $font-weight--normal;
+  }
+}

@@ -1,0 +1,23 @@
+body {
+  font-family: $font--main;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font--headings;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: $col--mabel-orange;
+}
+
+a:hover, a:active {
+  color: $col--mabel-orange;
+  text-decoration: underline;
+}

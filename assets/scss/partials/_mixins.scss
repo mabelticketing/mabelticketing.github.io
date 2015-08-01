@@ -28,3 +28,9 @@
         transform: translate(-50%, -50%);
     }   
 }
+
+// TODO: probably unnecessary
+@mixin slide-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}

@@ -1,0 +1,80 @@
+
+.whatbox {
+  text-align: center;
+  span {
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+}
+
+.thumb {
+  text-align: center;
+  margin-top: 60px;
+
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.card {
+  background-color: $col--white;
+  border-radius: 18px;
+
+}
+
+.card-title-spacer {
+  height: 40px;
+}
+
+.card-title {
+  height: 40px;
+  overflow: hidden;
+
+  h5 {
+    text-align: center;
+    font-size: 1.3em;
+    font-family: $font--headings;
+    text-transform: uppercase;
+  }
+}
+
+.card-details {
+  padding: 18px;
+  text-align: justify;
+}
+
+.card-details-spacer {
+  padding-top: 18px;
+}
+
+@media (min-width: $screen-md) {
+  .card-details, .card-details-spacer {
+    height: 240px;
+  }
+}
+
+.card-rowtitles {
+  text-align: right;
+  padding-right: 0;
+}
+
+@media (max-width: $screen-md) {
+  .card-rowtitles {
+    display: none;
+  }
+}
+
+.card-details-spacer, .card-support-spacer, .card-price-spacer {
+  font-weight: $font-weight--bold;
+}
+
+.big-central-text {
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
