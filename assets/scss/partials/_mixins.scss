@@ -1,5 +1,6 @@
 
 // centre content: http://stackoverflow.com/questions/23240114/
+// not sure about this...
 @mixin center-content($axis: "both"){
     position:absolute;
     @if $axis == "y"{
