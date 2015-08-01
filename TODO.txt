@@ -1,0 +1,26 @@
+TODO.txt
+
+need a favicon
+need logo to be saved as an image (after it looks decent)
+responsiveness - needs more responsiveness (a bit buggy atm)
+
+needs to look nicer, some margins are a little off
+
+Perhaps we could have another thumb about payments (with corresponding fontawesome currency symbol). Then we can do a 3x3 grid - might look nicer
+
+I think for the pricing on cards can do a smallcaps on top and normal text underneath e.g.
+
+  O N E - O F F  P A Y M E N T          <-- SMALL
+  £400.00                               <-- BIG
+
+I'm not sure if pricing is correct. 
+
+All text needs checking - there is a bit too much in places.
+
+Please be ruthless and brutal with editing the site // I won't get offended
+
+maybe a new photo for you/me because we arent looking the same direction and one is darker and we are different sizes
+
+footer has 5px beneath that is white and i can't get rid of it :(
+
+needs more mobile testing
