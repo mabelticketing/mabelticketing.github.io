@@ -6,21 +6,20 @@ html
 
 
 	body
-			a(href="https://github.com/mabelticketing/mabel")
-				img(style="position: absolute; top: 0; right: 0; border: 0;",
-					src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67",
-					alt="Find me on GitHub",
-					data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png")
-			section#titlebox
+			header
 				.container(style="text-align: center;height: 100%;")
 					.titlebox
 						.center-fix
 							.mabel-logo
 								h1 Mabel
-						p.tagline A May Ball ticketing system
-						p #[b Mabel] is a modern ticketing system designed especially for your May Ball, June Event or Garden Party. It was built from the ground up to be easy to use whilst giving your committee the power to quickly do everything they need.
-						a.ghost-button #[span.fa.fa-code] source
-						a.ghost-button #[span.fa.fa-angle-down] read more
+						p.big-central-text #[b Mabel] is a modern ticketing system designed especially for your May Ball, June Event or Garden Party. It was built from the ground up after Emmanuel College was left with no ticketing system in 2013. In 2014, the Emma May Ball sold out in #[strong record time], with no one's tickets being lost[?nt sure about these sentences]. It is designed to be easy to use whilst giving your committee the power to quickly do everything they need.
+						.row
+							.col-md-6.col-md-offset-3.col-sm-12
+								.row
+									.col-md-6.col-sm-12
+										a(href="https://github.com/mabelticketing/mabel" target="_blank").ghost-button #[span.fa.fa-code] source
+									.col-md-6.col-sm-12
+										a(href="#intro").ghost-button #[span.fa.fa-angle-down] read more
 			section#intro
 				.container
 					h2 But I already have a ticketing system!
@@ -34,7 +33,7 @@ html
 					h2 What can Mabel do?
 					.row
 						.col-sm-3.whatbox
-							span.fa.fa-lock
+							span.fa.fa-lightbulb-o
 							h4 Intelligent Authentication
 							p Mabel can use any authentication system you like. Raven support is built-in, and it is easy to extend Mabel to handle alumni or your college's own login system.
 						.col-sm-3.whatbox
@@ -70,35 +69,57 @@ html
 			section#using
 				.container
 					h2 Using Mabel
-					p There are three ways to use Mabel. You can obtain the source code for free from our #[a(href="#") GitHub repository] - but then you’re on your own. If your committee lacks the technical capacity to do that, we can do it for you instead.
-						table.table
-							thead
-								tr
-									th
-									th Community
-									th Basic
-									th Premium
-							tbody
-								tr
-									th Details
-									td
+					.row
+						.col-md-offset-3.col-md-6
+							p.big-central-text There are three ways to use Mabel. You can obtain the source code for free from our #[a(href="#") GitHub repo] - but then you’re on your own. If your committee lacks the technical capacity to do that, we can do it for you instead.
+						
+					.row
+						.col-md-1.card-rowtitles
+							.row
+								.col-md-12
+									.card-title-spacer
+									.card-details-spacer
+										p Details
+								.col-md-12
+									.card-support-spacer
+										p Support
+								.col-md-12
+									.card-price-spacer
+										p Pricing
+						.col-md-11.col-sm-12
+							.col-md-4
+								.card-title
+									h5 Community
+								.card
+									.card-details
 										p Mabel is released under the open-source GPL license. That means you can use the code for free, as long as you share any modifications you make back with us.
 										p If you’re not making modifications, please consider making a donation to support the project’s ongoing development. [link to easy to use donation giver page - suggested donation should be listed on that page]
-									td
-											p We can set up the system for you, and show you how to use it.[say some more about support]
-									td
-											p We will set up the system and make custom modifications for you as required. This also includes the ability to receive online payments, so your committee can receive their money a few days after launch night.
-								tr
-									th Support
-									td cross None
-									td tick some
-									td ticktick Loads
-								tr
-									th Price
-									td Free
-									td One-off fee of £500
-									td 3% of ticket sale price per ticket
-			section
+									.card-support
+										p #[span.fa.fa-times] None
+									.card-price
+										p Donation (optional)
+										p &pound;0.01 per ticket (optional)
+							.col-md-4
+								.card-title
+									h5 Support
+								.card
+									.card-details We can set up the system for you, and show you how to use it.[say some more about support]
+									.card-support
+										p #[span.fa.fa-check] A little
+									.card-price
+										p One-off payment
+										p £400.00
+							.col-md-4
+								.card-title
+									h5 Support+
+								.card
+									.card-details We will set up the system and make custom modifications for you as required. This also includes the ability to receive online payments, so your committee can receive their money a few days after launch night.
+									.card-support
+										p #[span.fa.fa-check] #[span.fa.fa-check] A lot
+									.card-price
+										p Fee
+										p 3.00% of ticket intake
+			section#creators
 				.container
 					h2 Creators
 					.row
@@ -109,7 +130,7 @@ html
 
 
 					.row
-						.col-sm-12.col-md-6.col-md-offset-3.tagline
+						.col-sm-12.col-md-6.col-md-offset-3.big-central-text
 							p Christopher and Tom are Computer Scientists at Emmanuel College. Both love pretty things, hate wasted time and can’t get enough JavaScript.
 			section#more
 				.container
