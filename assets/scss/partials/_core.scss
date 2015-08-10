@@ -1,23 +1,47 @@
 body {
-  font-family: $font--main;
+	font-family: $font--main;
+	line-height: 1.8;
 }
 
 h1, h2, h3, h4 {
-  font-family: $font--headings;
+	font-family: $font--headings;
 }
 
 h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: center;
+	margin-top: 0;
+	position: relative;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
+h4 {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+h3 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+// h2::before {
+// 	content: "";
+// 	position: absolute;
+// 	left: 50%;
+// 	bottom: 0;
+// 	height: 1px;
+// 	width: 100px;
+// 	border-bottom: 1px solid black;
+// 	margin-left: -50px;
+// }
+
 a {
-  text-decoration: none;
-  color: $col--mabel-orange;
+	text-decoration: none;
+	color: $col--mabel-orange;
 }
 
 a:hover, a:active {
-  color: $col--mabel-orange;
-  text-decoration: underline;
+	color: $col--mabel-orange;
+	text-decoration: underline;
 }

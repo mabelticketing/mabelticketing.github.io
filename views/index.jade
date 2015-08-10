@@ -12,7 +12,13 @@ html
 						.center-fix
 							.mabel-logo
 								h1 Mabel
-						p.big-central-text #[b Mabel] is a modern ticketing system designed especially for your May Ball, June Event or Garden Party. It was built from the ground up after Emmanuel College was left with no ticketing system in 2013. In 2014, the Emma May Ball sold out in #[strong record time], with no one's tickets being lost[?nt sure about these sentences]. It is designed to be easy to use whilst giving your committee the power to quickly do everything they need.
+
+						p.big-central-text #[b Mabel] is a modern ticketing
+							|  system designed especially for your May Ball, June
+							|  Event or Garden Party. It is easy to use, and gives
+							|  your committee the power to quickly do everything 
+							|  they need to.
+
 						.row
 							.col-md-6.col-md-offset-3.col-sm-12
 								.row
@@ -28,44 +34,44 @@ html
 							p Almost every committee has their own legacy system, passed on from one year to the next long after the original author has left. Nearly all of them have bugs and quirks, making the ticket booking experience error-prone or unreliable. In some cases, ticketing system bugs may actually be dangerous, as malicious users circumvent security systems.
 						.col-md-6
 							p Even if you’ve never had a problem with your ticketing system before, very few committees have the ability to update it in-house when new technologies appear. Can your ticketing system receive immediate online payments? Could it tie into electronic wristbands or a custom app for your event? Why waste your committee’s time by integrating these features when somebody else has already done it?
-			section#what
+			section#whatmain
 				.container
 					h2 What can Mabel do?
+					// TODO: Better colours
 					.row
-						.col-sm-3.whatbox
-							span.fa.fa-lightbulb-o
-							h4 Intelligent Authentication
-							p Mabel can use any authentication system you like. Raven support is built-in, and it is easy to extend Mabel to handle alumni or your college's own login system.
-						.col-sm-3.whatbox
+						.col-sm-4.whatbox
+							span.fa.fa-paint-brush(style="background-color:green")
+							h4 Make Mabel yours
+							p It’s easy to style Mabel to look exactly the way you want to, so your event’s theme can shine through when your guests buy their tickets.
+						.col-sm-4.whatbox
+							span.fa.fa-rocket(style="background-color:red")
+							h4 Rock-solid speed
+							p Mabel will handle hundreds of simultaneous users without breaking a sweat. So you can rest easy on launch night knowing nothing can go wrong.
+						.col-sm-4.whatbox
+							span.fa.fa-moon-o(style="background-color:blue")
+							h4 On the night
+							p No one likes queueing, which is why we’ve integrated a super fast ticket scanning system. Your guests will be through the door in record time.
+			section#whatsm
+				.container
+					h3 More Features
+					.row
+						.col-sm-6.whatboxsm
 							span.fa.fa-ticket
 							h4 Customisable ticket types
-							p Queue-jump? Dining? Punting? Early bird? Our admin panel allows you to create as many ticket types as you can think of.
-						.col-sm-3.whatbox
-							span.fa.fa-cogs
-							h4 Changeable ticketing permissions
-							p Only want students from your college purchasing dining tickets? We have a flexible system for you to choose who can buy which tickets.
-						.col-sm-3.whatbox
+							p Queue-jump? Dining? Punting? Early bird? Our admin panel allows you to create as many ticket types as you can think of, and restrict exactly who can buy them.
+						.col-sm-6.whatboxsm
 							span.fa.fa-mobile
 							h4 Mobile
 							p We optimise Mabel for mobile, so students can book their tickets from the comfort of the college library.
 					.row
-						.col-sm-3.whatbox
+						.col-sm-6.whatboxsm
+							span.fa.fa-lightbulb-o
+							h4 Intelligent Authentication
+							p Mabel can use any authentication system you like. Raven support is built-in, and it is easy to extend Mabel to handle alumni or your college's own login system.
+						.col-sm-6.whatboxsm
 							span.fa.fa-calendar-check-o
 							h4 Separate ticket release dates
 							p If you want to release tickets to your college before the rest of the university, you can!
-						.col-sm-3.whatbox
-							span.fa.fa-paint-brush
-							h4 Make Mabel yours
-							p It’s easy to style Mabel to look exactly the way you want to, so your event’s theme can shine through when your guests buy their tickets.
-						.col-sm-3.whatbox
-							span.fa.fa-rocket
-							h4 Rock-solid speed
-							p Mabel will handle hundreds of simultaneous users without breaking a sweat. So you can rest easy on launch night knowing nothing can go wrong.
-						.col-sm-3.whatbox
-							span.fa.fa-moon-o
-							h4 On the night
-							p No one likes queueing, which is why we’ve integrated a super fast ticket scanning system. Your guests will be through the door in record time.
-
 			section#using
 				.container
 					h2 Using Mabel

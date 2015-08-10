@@ -36,17 +36,22 @@ header, section, footer {
   @include slide-padding;
 }
 
-#what {
+#whatmain {
   @include slide-padding;
 }
 
-#using {
+#whatsm {
   @include slide-padding;
   background-color: $col--very-light-grey;
 }
 
+#using {
+  @include slide-padding;
+}
+
 #creators {
   @include slide-padding;
+  background-color: $col--very-light-grey;
 }
 
 #more {
@@ -54,12 +59,14 @@ header, section, footer {
   text-align: center;
   @include slide-padding;
   background-color: $col--mabel-orange;
+
   p {
     font-family: $font--headings;
     color: $col--black;
     text-transform: uppercase;
     font-weight: bold;
   }
+
   a.mail-link {
     text-decoration: underline;
     color: $col--black !important;
@@ -70,11 +77,13 @@ footer {
   background-color: $col--dark-grey;
   color: $col--light-grey;
   height: 40px;
+
   p {
     text-align: center;
     margin: 17px;
     font-size: 12px;
   }
+
   a, a:hover, a:active {
     text-decoration: underline;
     color: $col--light-grey;

@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+            "folder_exclude_patterns": [".*", "bower_components", "assets/components", "node_modules", "assets/scss/vendor"],
+            "file_exclude_patterns": [".*", "*.map", "assets/css/main.css", "index.html"]
+		}
+	]
+}

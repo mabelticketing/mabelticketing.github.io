@@ -1,11 +1,37 @@
-
 .whatbox {
   text-align: center;
+
   span {
     font-size: 2.5em;
     margin-top: 20px;
     margin-bottom: 20px;
     display: inline-block;
+    padding: 20px;
+    color: white;
+    border-radius: 190px;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 24px;
+    color: $col--dark-grey;
+    font-weight: 600;
+  }
+}
+
+.whatboxsm {
+  text-align: left;
+
+  span {
+    font-size: 2.5em;
+    float: left;
+    height: 24px;
+    margin-right: 24px;
+    width: 28px;
+  }
+
+  p {
+    margin-left: 50px;
   }
 }
 
@@ -23,7 +49,6 @@
 .card {
   background-color: $col--white;
   border-radius: 18px;
-
 }
 
 .card-title-spacer {
