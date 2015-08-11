@@ -1,5 +1,6 @@
 TODO.txt
 
+
 need a favicon
 need logo to be saved as an image (after it looks decent)
 responsiveness - needs more responsiveness (a bit buggy atm)
