@@ -1,6 +1,11 @@
 body {
 	font-family: $font--main;
-	line-height: 1.8;
+}
+
+p {
+	font-size: 13px;
+	line-height: 24px;
+	color: $col--mid-grey;
 }
 
 h1, h2, h3, h4 {

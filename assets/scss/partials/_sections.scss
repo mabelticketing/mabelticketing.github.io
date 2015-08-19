@@ -32,12 +32,12 @@ header, section, footer {
 }
 
 #intro {
-  background-color: $col--very-light-grey;
   @include slide-padding;
 }
 
 #whatmain {
   @include slide-padding;
+  background-color: $col--very-light-grey;
 }
 
 #whatsm {
