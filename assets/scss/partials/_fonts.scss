@@ -1,2 +1,21 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+// @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+// for offline development
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	// src: url("../fonts/Montserrat-Regular.eot");
+	src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	// src: url("../fonts/Montserrat-Bold.eot");
+	src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}

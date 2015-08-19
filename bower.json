@@ -7,6 +7,7 @@
   ],
   "license": "GNU General Public License v2.0",
   "dependencies": {
-    "bootstrap-sass": "twbs/bootstrap-sass#~3.3.5"
+    "bootstrap-sass": "twbs/bootstrap-sass#~3.3.5",
+    "skrollr": "~0.6.30"
   }
 }

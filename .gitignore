@@ -4,3 +4,4 @@ assets/components/
 assets/css/
 index.html
 npm-debug.log
+*.sublime-workspace
