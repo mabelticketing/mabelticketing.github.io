@@ -2356,14 +2356,62 @@ header .container {
   margin: 0;
   width: 100%;
   position: relative;
-  text-align: center;
-  padding-bottom: 50px;
+  text-align: left;
+  padding-top: 150px;
+  padding-bottom: 150px;
   background: -moz-linear-gradient(top, rgba(62, 88, 113, 0.3) 0%, rgba(8, 11, 14, 0.8) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(62, 88, 113, 0.3)), color-stop(100%, rgba(8, 11, 14, 0.8)));
   background: -webkit-linear-gradient(top, rgba(62, 88, 113, 0.3) 0%, rgba(8, 11, 14, 0.8) 100%);
   background: -o-linear-gradient(top, rgba(62, 88, 113, 0.3) 0%, rgba(8, 11, 14, 0.8) 100%);
   background: -ms-linear-gradient(top, rgba(62, 88, 113, 0.3) 0%, rgba(8, 11, 14, 0.8) 100%);
   background: linear-gradient(to bottom, rgba(62, 88, 113, 0.3) 0%, rgba(8, 11, 14, 0.8) 100%); }
+  header .container h1.logo {
+    color: white;
+    text-align: left;
+    font-size: 4em;
+    color: white;
+    text-align: left;
+    font-size: 6em;
+    letter-spacing: -0.07em; }
+    header .container h1.logo span {
+      color: #ff6600; }
+  header .container h3 {
+    text-align: left;
+    color: #ECF0F1; }
+  header .container .action {
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    color: #ECF0F1;
+    white-space: nowrap;
+    padding: 10px 24px;
+    display: inline-block; }
+    header .container .action .fa {
+      color: #ECF0F1;
+      margin-right: 5px;
+      font-size: 2em;
+      vertical-align: middle; }
+    header .container .action .words {
+      vertical-align: middle; }
+    header .container .action:hover {
+      text-decoration: none; }
+    header .container .action.one {
+      background-color: #2980B9;
+      border-color: #2980B9; }
+      header .container .action.one:hover {
+        background-color: #20638f;
+        border-color: #20638f; }
+    header .container .action.two {
+      margin-left: 25px;
+      border-color: #ECF0F1;
+      background-color: transparent; }
+      header .container .action.two:hover, header .container .action.two:hover .fa {
+        background-color: #ECF0F1;
+        color: #2C3E50; }
   header .container p {
     color: #ECF0F1;
     font-size: 1.3em;

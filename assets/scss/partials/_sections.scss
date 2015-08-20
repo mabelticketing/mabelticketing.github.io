@@ -8,9 +8,76 @@ header .container {
   margin: 0;
   width: 100%;
   position: relative;
-  text-align: center;
-  padding-bottom: 50px;
+  text-align: left;
+  padding-top:150px;
+  padding-bottom: 150px;
+
   @include bg-gradient(0.3, 0.8, lighten($col--flat-dark, 10%), darken($col--flat-dark, 20%));
+
+  h1.logo {
+    color: white; //$col--flat-light;
+    text-align:left;
+    font-size:4em;
+    color: white;
+    text-align: left;
+    font-size: 6em;
+    letter-spacing: -0.07em;
+    span {
+      color: $col--highlight;
+    }
+  }
+
+  h3 {
+    text-align:left;
+    color: $col--flat-light;
+    // span {
+    //   color: $col--flat-dark-blue;
+    // }
+  }
+
+  .action {
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: $font-weight--bold;
+    text-align: center;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    color: $col--flat-light;
+    white-space:nowrap;
+    padding: 10px 24px;
+    display:inline-block;
+
+    .fa {
+      color: $col--flat-light;
+      margin-right:5px;
+      font-size:2em;
+      vertical-align: middle;
+    }
+    .words {
+      vertical-align: middle;
+    }
+    &:hover { 
+      text-decoration: none;
+    }
+    &.one {
+      background-color: $col--flat-dark-blue;
+      border-color: $col--flat-dark-blue;
+      &:hover {
+        background-color: darken($col--flat-dark-blue, 10%);
+        border-color: darken($col--flat-dark-blue, 10%);
+      }
+    }
+    &.two {
+      margin-left:25px;
+      border-color: $col--flat-light;
+      background-color: transparent;
+      &:hover, &:hover .fa { 
+        background-color: $col--flat-light;
+        color: $col--flat-dark;
+      }
+    }
+  }
 
   p {
     color: $col--flat-light;
