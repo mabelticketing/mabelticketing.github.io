@@ -5,26 +5,28 @@ html
 		link(rel="stylesheet", type="text/css", href="/assets/css/main.css")
 	body
 			header
-				img.bgimage(src="https://images.unsplash.com/uploads/1413259835094dcdeb9d3/6e609595?q=80&fm=jpg&s=34df8de331cae7450247b04ed37d9ede")
-				.container(style="text-align: center;height: 100%;min-height:440px; background-color:black")
-					.titlebox
-						.center-fix
-							.mabel-logo
-								h1 Mabel
+				//- img.bgimage(src="https://images.unsplash.com/uploads/1413259835094dcdeb9d3/6e609595?q=80&fm=jpg&s=34df8de331cae7450247b04ed37d9ede")
+				.container
+					.row
+						.col-sm-6
+							p [Screenshots on a mac or something here]
+						.col-sm-6
+							.titlebox
+								.mabel-logo
+									h1 Mabel
 
-						p.big-central-text #[b Mabel] is a modern ticketing
-							|  system designed especially for your May Ball, June
-							|  Event or Garden Party. It is easy to use, and gives
-							|  your committee the power to quickly do everything 
-							|  they need to.
+								p.big-central-text #[b Mabel] is a modern ticketing
+									|  system designed especially for your May Ball, June
+									|  Event or Garden Party. It is easy to use, and gives
+									|  your committee the power to quickly do everything 
+									|  they need to.
 
-						.row
-							.col-md-6.col-md-offset-3.col-sm-12
 								.row
-									.col-md-6.col-sm-12
-										a(href="https://github.com/mabelticketing/mabel" target="_blank").ghost-button #[span.fa.fa-code] source
-									.col-md-6.col-sm-12
-										a(href="#whatmain").ghost-button #[span.fa.fa-angle-down] read more
+									.col-md-6
+										a(href="https://github.com/mabelticketing/mabel" target="_blank").btn.btn-default.btn-lg #[span.fa.fa-code] source
+									.col-md-6
+										a(href="#whatmain").btn.btn-default.btn-lg #[span.fa.fa-angle-down] read more
+					div.bg(style="background-image:url(assets/img/bg2.jpg)")
 			section#whatmain
 				.container
 					h2 What can Mabel do?
@@ -76,40 +78,19 @@ html
 					h2 Using Mabel
 					.row
 						.col-md-offset-2.col-md-8
-							p(style="text-align:center") There are three ways to use Mabel. You can obtain the source code for free from our #[a(href="#") GitHub repository]—but then you’re on your own. If that sounds like too much trouble, we'll do it for you instead.
+							p(style="text-align:center") There are three ways to use Mabel. You can obtain the source code for free from our #[a(href="#") GitHub repository]—but then you’re on your own. If that sounds like too much trouble, we can do it for you instead.
 						
 					.row
-						//- .col-md-1.card-rowtitles
-						//- 	.row
-						//- 		.col-md-12
-						//- 			.card-title-spacer
-						//- 			.card-details-spacer
-						//- 				p Details
-						//- 		.col-md-12
-						//- 			.card-support-spacer
-						//- 				p Support
-						//- 		.col-md-12
-						//- 			.card-price-spacer
-						//- 				p Pricing
-						//- .col-md-11.col-sm-11
 						.col-md-4
 							div.pricing-card
 								h5 Community
-								h6 Free
+								h6 Free 
 								hr
 								p Source Code Available (GPL) 
 								p No Hosting
 								p No Support
 								p No Online Payments
 								button.btn Get it
-								//- .card-details
-								//- 	p Mabel is released under the open-source GPL license. That means you can use the code for free, as long as you share any modifications you make back with us.
-								//- 	p If you’re not making modifications, please consider making a donation to support the project’s ongoing development. [link to easy to use donation giver page - suggested donation should be listed on that page]
-								//- .card-support
-								//- 	p.fa-times None
-								//- .card-price
-								//- 	p Donation (optional)
-								//- 	p &pound;0.01 per ticket (optional)
 						.col-md-4
 							div.pricing-card
 								h5 Basic
@@ -120,28 +101,16 @@ html
 								p Support for Setup only
 								p No Online Payments
 								button.btn Get it
-								//- .card-details We can set up the system for you, and show you how to use it.[say some more about support]
-								//- .card-support
-								//- 	p.fa-check Set-up
-								//- .card-price
-								//- 	p One-off payment
-								//- 	p £400.00
 						.col-md-4
 							div.pricing-card
 								h5 Premium
-								h6 3% Ticket Price
+								h6 3% of Ticket Sales
 								hr
 								p Source Code Available (GPL) 
 								p Hosting Included 
 								p Setup & Customisation Support
 								p Online Payments Included 
 								button.btn Get it
-								//- .card-details We will set up the system and make custom modifications for you as required. This also includes the ability to receive online payments, so your committee can receive their money a few days after launch night.
-								//- .card-support
-								//- 	p #[span.fa.fa-check] Set-up and Customisation
-								//- .card-price
-								//- 	p Fee
-								//- 	p 3.00% of ticket intake
 			section#creators
 				.container
 					h2 Creators

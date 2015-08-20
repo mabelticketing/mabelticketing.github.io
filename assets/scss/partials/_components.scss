@@ -118,6 +118,10 @@
   text-align: center;
   background-color: white;
 
+  h6 {
+    color: $col--mid-grey;
+  }
+
   p {
     color: $col--dark-grey;
   }
@@ -129,4 +133,16 @@
   // .amount {
   //   color: $col--dark-grey;
   // }
+}
+
+.bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
 }

@@ -1,37 +1,54 @@
-
 // centre content: http://stackoverflow.com/questions/23240114/
 // not sure about this...
-@mixin center-content($axis: "both"){
-    position:absolute;
-    @if $axis == "y"{
-        top:50%;
+@mixin center-content($axis: "both") {
+    position: absolute;
+
+    @if $axis == "y" {
+        top: 50%;
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
         transform: translateY(-50%);
     }
-    @if $axis == "x"{
-        left:50%;
+
+    @if $axis == "x" {
+        left: 50%;
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
         transform: translateX(-50%);
     }
-    @if $axis == "both"{
-        top:50%;
-        left:50%;
+
+    @if $axis == "both" {
+        top: 50%;
+        left: 50%;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-    }   
+    }
 }
 
 // TODO: probably unnecessary
 @mixin slide-padding {
-  padding-top: 80px;
-  padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@mixin black-bg-gradient($start, $stop) {
+    /* FF3.6+ */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, $start) 0%, rgba(0, 0, 0, $stop) 100%);
+    /* Chrome,Safari4+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, $start)), color-stop(100%, rgba(0, 0, 0, $stop)));
+    /* Chrome10+,Safari5.1+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, $start) 0%, rgba(0, 0, 0, $stop) 100%);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, $start) 0%, rgba(0, 0, 0, $stop) 100%);
+    /* IE10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, $start) 0%, rgba(0, 0, 0, $stop) 100%);
+    /* W3C */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, $start) 0%, rgba(0, 0, 0, $stop) 100%);
 }
