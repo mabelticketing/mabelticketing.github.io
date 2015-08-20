@@ -1,5 +1,4 @@
 *.sublime-workspace
 .sass-cache/
-index.html
 node_modules/
 npm-debug.log
