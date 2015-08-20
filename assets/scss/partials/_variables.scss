@@ -24,12 +24,12 @@ $col--azur-dark-blue: #00585F;
 // Based on 
 // https://color.adobe.com/Flat-UI-color-theme-2469224/
 $col--flat-dark: #2C3E50;
-$col--flat-highlight: #FF3800;
+$col--flat-highlight: #FF6B5C;
 $col--flat-light: #ECF0F1;
 $col--flat-light-blue: #3498DB;
 $col--flat-dark-blue: #2980B9;
-// modification:
-$col--flat-highlight: $col--mabel-orange;
+
+$col--mint-green: #3CE78B;
 
 
 // now semantic values (maybe shouldn't be here)
@@ -37,7 +37,7 @@ $col--bg-dark: transparent;
 $col--bg-light: $col--very-light-grey;
 $col--main-text: $col--flat-dark-blue;
 $col--title: $col--flat-dark;
-$col--highlight: $col--flat-highlight;
+$col--highlight:  $col--mabel-orange;
 
 $font-weight--bold: 700;
 $font-weight--normal: 400;
