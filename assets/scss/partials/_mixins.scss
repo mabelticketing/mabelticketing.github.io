@@ -38,17 +38,16 @@
     padding-bottom: 80px;
 }
 
-@mixin black-bg-gradient($start, $stop) {
-    /* FF3.6+ */
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, $start) 0%, rgba(0, 0, 0, $stop) 100%);
-    /* Chrome,Safari4+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, $start)), color-stop(100%, rgba(0, 0, 0, $stop)));
-    /* Chrome10+,Safari5.1+ */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, $start) 0%, rgba(0, 0, 0, $stop) 100%);
-    /* Opera 11.10+ */
-    background: -o-linear-gradient(top, rgba(0, 0, 0, $start) 0%, rgba(0, 0, 0, $stop) 100%);
-    /* IE10+ */
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, $start) 0%, rgba(0, 0, 0, $stop) 100%);
-    /* W3C */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, $start) 0%, rgba(0, 0, 0, $stop) 100%);
+@mixin bg-gradient($start:0.4, $stop:0.8, $color1: rgb(0, 0, 0), $color2: 'auto') {
+    @if $color2 == 'auto' {
+        $color2: $color1;
+    }
+
+
+    background: -moz-linear-gradient(top, rgba($color1, $start) 0%, rgba($color2, $stop) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($color1, $start)), color-stop(100%,rgba($color2, $stop)));
+    background: -webkit-linear-gradient(top, rgba($color1, $start) 0%,rgba($color2, $stop) 100%);
+    background: -o-linear-gradient(top, rgba($color1, $start) 0%,rgba($color2, $stop) 100%);
+    background: -ms-linear-gradient(top, rgba($color1, $start) 0%,rgba($color2, $stop) 100%);
+    background: linear-gradient(to bottom, rgba($color1, $start) 0%,rgba($color2, $stop) 100%);
 }

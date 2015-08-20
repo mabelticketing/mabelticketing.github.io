@@ -1,15 +1,21 @@
 body {
 	font-family: $font--main;
+	color: $col--main-text;
+}
+
+.fa {
+	color: $col--title;
 }
 
 p {
 	font-size: 13px;
 	line-height: 24px;
-	color: $col--mid-grey;
+	color: $col--main-text;
 }
 
 h1, h2, h3, h4 {
 	font-family: $font--headings;
+	color: $col--title;
 }
 
 h2 {
@@ -43,10 +49,10 @@ h3 {
 
 a {
 	text-decoration: none;
-	color: $col--mabel-orange;
+	color: $col--highlight;
 }
 
 a:hover, a:active {
-	color: $col--mabel-orange;
+	color: $col--highlight;
 	text-decoration: underline;
 }

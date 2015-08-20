@@ -106,7 +106,7 @@
 }
 
 .big-central-text {
-  color: $col--bootstrap-black;
+  color: $col--main-text;
   font-size: 1.3em;
   text-align: center;
   margin-top: 40px;
@@ -116,14 +116,13 @@
 .pricing-card {
   margin-top: 40px;
   text-align: center;
-  background-color: white;
 
   h6 {
-    color: $col--mid-grey;
+    color: $col--title;
   }
 
   p {
-    color: $col--dark-grey;
+    color: $col--main-text;
   }
 
   hr {
@@ -145,4 +144,5 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
+  background-position: center bottom;
 }

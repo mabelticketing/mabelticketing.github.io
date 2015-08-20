@@ -1,6 +1,8 @@
 $font--main: "Montserrat", sans-serif;
 $font--headings: "Montserrat", sans-serif;
 
+
+// Original colours
 $col--mabel-orange: rgba(255, 102, 0, 1);
 $col--bootstrap-black: rgba(51, 51, 51, 1);
 $col--black: rgba(0, 0, 0, 1);
@@ -9,6 +11,33 @@ $col--mid-grey: rgba(150, 150, 150, 1);
 $col--light-grey: rgba(200, 200, 200, 1);
 $col--very-light-grey: #f4f4f4;
 $col--white: rgba(255, 255, 255, 1);
+
+// Based on 
+// https://color.adobe.com/Cote-Azur-color-theme-1440313
+$col--azur-orange: #FF3800;
+$col--azur-dark-cream: #F0EDBB;
+$col--azur-light-cream: #FFFCC4;
+$col--azur-light-blue: #009393;
+$col--azur-dark-blue: #00585F;
+
+
+// Based on 
+// https://color.adobe.com/Flat-UI-color-theme-2469224/
+$col--flat-dark: #2C3E50;
+$col--flat-highlight: #FF3800;
+$col--flat-light: #ECF0F1;
+$col--flat-light-blue: #3498DB;
+$col--flat-dark-blue: #2980B9;
+// modification:
+$col--flat-highlight: $col--mabel-orange;
+
+
+// now semantic values (maybe shouldn't be here)
+$col--bg-dark: transparent;
+$col--bg-light: $col--very-light-grey;
+$col--main-text: $col--flat-dark-blue;
+$col--title: $col--flat-dark;
+$col--highlight: $col--flat-highlight;
 
 $font-weight--bold: 700;
 $font-weight--normal: 400;

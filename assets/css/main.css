@@ -2291,15 +2291,20 @@ input[type="button"].btn-block {
   font-weight: 700;
   src: url("../fonts/Montserrat-Bold.ttf") format("truetype"); }
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  color: #2980B9; }
+
+.fa {
+  color: #2C3E50; }
 
 p {
   font-size: 13px;
   line-height: 24px;
-  color: #969696; }
+  color: #2980B9; }
 
 h1, h2, h3, h4 {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  color: #2C3E50; }
 
 h2 {
   margin-top: 0;
@@ -2353,20 +2358,14 @@ header .container {
   position: relative;
   text-align: center;
   padding-bottom: 50px;
-  /* FF3.6+ */
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%);
-  /* Chrome,Safari4+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.8)));
-  /* Chrome10+,Safari5.1+ */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%);
-  /* Opera 11.10+ */
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%);
-  /* IE10+ */
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%);
-  /* W3C */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%); }
+  background: -moz-linear-gradient(top, rgba(62, 88, 113, 0.3) 0%, rgba(8, 11, 14, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(62, 88, 113, 0.3)), color-stop(100%, rgba(8, 11, 14, 0.8)));
+  background: -webkit-linear-gradient(top, rgba(62, 88, 113, 0.3) 0%, rgba(8, 11, 14, 0.8) 100%);
+  background: -o-linear-gradient(top, rgba(62, 88, 113, 0.3) 0%, rgba(8, 11, 14, 0.8) 100%);
+  background: -ms-linear-gradient(top, rgba(62, 88, 113, 0.3) 0%, rgba(8, 11, 14, 0.8) 100%);
+  background: linear-gradient(to bottom, rgba(62, 88, 113, 0.3) 0%, rgba(8, 11, 14, 0.8) 100%); }
   header .container p {
-    color: #c8c8c8;
+    color: #ECF0F1;
     font-size: 1.3em;
     text-align: center;
     margin-top: 40px;
@@ -2395,14 +2394,15 @@ header .container {
   margin: auto;
   display: inline-block; }
 
-#intro {
-  padding-top: 80px;
-  padding-bottom: 80px; }
-
 #whatmain {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #f4f4f4; }
+
+#intro {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: transparent; }
 
 #whatsm {
   padding-top: 80px;
@@ -2411,7 +2411,8 @@ header .container {
 
 #using {
   padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  background-color: transparent; }
 
 #creators {
   padding-top: 80px;
@@ -2523,7 +2524,7 @@ footer {
   font-weight: 700; }
 
 .big-central-text {
-  color: #333333;
+  color: #2980B9;
   font-size: 1.3em;
   text-align: center;
   margin-top: 40px;
@@ -2531,12 +2532,11 @@ footer {
 
 .pricing-card {
   margin-top: 40px;
-  text-align: center;
-  background-color: white; }
+  text-align: center; }
   .pricing-card h6 {
-    color: #969696; }
+    color: #2C3E50; }
   .pricing-card p {
-    color: #505050; }
+    color: #2980B9; }
   .pricing-card hr {
     width: 60%; }
 
@@ -2549,6 +2549,7 @@ footer {
   z-index: -1;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-position: center bottom; }
 
 /*# sourceMappingURL=main.css.map */

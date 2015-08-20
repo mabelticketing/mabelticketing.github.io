@@ -10,10 +10,10 @@ header .container {
   position: relative;
   text-align: center;
   padding-bottom: 50px;
-  @include black-bg-gradient(0.2, 0.8);
+  @include bg-gradient(0.3, 0.8, lighten($col--flat-dark, 10%), darken($col--flat-dark, 20%));
 
   p {
-    color: $col--light-grey;
+    color: $col--flat-light;
     font-size: 1.3em;
     text-align: center;
     margin-top: 40px;
@@ -35,7 +35,7 @@ header .container {
     margin: 0;
     font-size: 4em;
     color: $col--black;
-    text-shadow: 2px 2px 0px $col--mabel-orange;
+    text-shadow: 2px 2px 0px $col--highlight;
 
     &::after {
       content: "";
@@ -50,27 +50,29 @@ header .container {
   display: inline-block;
 }
 
-#intro {
-  @include slide-padding;
-}
-
 #whatmain {
   @include slide-padding;
-  background-color: $col--very-light-grey;
+  background-color: $col--bg-light;
+}
+
+#intro {
+  @include slide-padding;
+  background-color: $col--bg-dark;
 }
 
 #whatsm {
   @include slide-padding;
-  background-color: $col--very-light-grey;
+  background-color: $col--bg-light;
 }
 
 #using {
   @include slide-padding;
+  background-color: $col--bg-dark;
 }
 
 #creators {
   @include slide-padding;
-  background-color: $col--very-light-grey;
+  background-color: $col--bg-light;
 }
 
 #more {
