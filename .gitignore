@@ -1,8 +1,5 @@
-node_modules/
-.sass-cache/
-assets/components/
-!assets/components/bootstrap-sass/assets/stylesheets/bootstrap
-assets/css/
-index.html
-npm-debug.log
 *.sublime-workspace
+.sass-cache/
+index.html
+node_modules/
+npm-debug.log
