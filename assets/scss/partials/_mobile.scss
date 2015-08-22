@@ -1,0 +1,50 @@
+// TODO: Technically we should be mobile-first rather than this but too late...
+
+.screenshot-mobile {
+	display:none;
+}
+
+
+@media (max-width: $screen-md) {
+	
+	// header
+	header {
+		.container {
+			padding-top:15px;
+			padding-bottom:15px;
+			.titlebox, h1.logo, h3 {
+				text-align:center;
+			}	
+		}
+	} 
+	.screenshot-desktop {
+		display:none;
+	}
+	.screenshot-mobile {
+		display:block;
+	}
+	section {
+		padding-top:30px;
+		padding-bottom:20px
+	}
+	.whatbox {
+		.fa {
+			margin-top:10px;
+			margin-bottom: 0px;
+		}
+		h4 {
+			margin-bottom:5px;
+		}
+	}
+	.whatboxsm {
+
+		p {
+			margin:15px;
+			margin-top:5px;
+		}
+	}
+	.thumb {
+
+  		margin-top: 0px;
+	}
+}

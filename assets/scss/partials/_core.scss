@@ -1,3 +1,7 @@
+// see http://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font
+// html * {max-height:1000000px;} // resets font sizes for some reason
+
+
 body {
 	font-family: $font--main;
 	color: $col--main-text;
@@ -33,7 +37,6 @@ h4 {
 
 h3 {
 	text-align: center;
-	margin-bottom: 50px;
 }
 
 // h2::before {

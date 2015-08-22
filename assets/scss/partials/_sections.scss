@@ -30,6 +30,7 @@ header .container {
   h3 {
     text-align:left;
     color: $col--flat-light;
+    margin-bottom: 50px;
     // span {
     //   color: $col--flat-dark-blue;
     // }
@@ -47,6 +48,7 @@ header .container {
     white-space:nowrap;
     padding: 10px 24px;
     display:inline-block;
+    margin:12px;
 
     .fa {
       color: $col--flat-light;
@@ -69,7 +71,6 @@ header .container {
       }
     }
     &.two {
-      margin-left:25px;
       border-color: $col--flat-light;
       background-color: transparent;
       &:hover, &:hover .fa { 
@@ -117,35 +118,22 @@ header .container {
   display: inline-block;
 }
 
-#whatmain {
-  @include slide-padding;
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#whatmain, #whatsm, #creators {
   background-color: $col--bg-light;
 }
 
-#intro {
-  @include slide-padding;
+#intro, #using {
   background-color: $col--bg-dark;
 }
 
-#whatsm {
-  @include slide-padding;
-  background-color: $col--bg-light;
-}
-
-#using {
-  @include slide-padding;
-  background-color: $col--bg-dark;
-}
-
-#creators {
-  @include slide-padding;
-  background-color: $col--bg-light;
-}
 
 #more {
   font-size: 2em;
   text-align: center;
-  @include slide-padding;
   background-color: $col--mabel-orange;
 
   p {
@@ -169,6 +157,7 @@ footer {
   p {
     text-align: center;
     margin: 17px;
+    margin-bottom:0;
     font-size: 12px;
   }
 

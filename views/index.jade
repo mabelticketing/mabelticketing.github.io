@@ -1,36 +1,27 @@
 html
 	head
 		title Mabel - A May Ball ticketing system
-		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
 		link(rel="stylesheet", type="text/css", href="/assets/css/main.css")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
 	body
 			header
 				//- img.bgimage(src="https://images.unsplash.com/uploads/1413259835094dcdeb9d3/6e609595?q=80&fm=jpg&s=34df8de331cae7450247b04ed37d9ede")
 				.container
 					.row
-						.col-sm-6
+						.col-md-6.screenshot-desktop
 							p [Screenshots on a mac or something here]
-						.col-sm-6
+						.col-md-6
 							.titlebox
 								h1.logo mabel#[span .]
-								//- h1.logo #[span m]abel
-								//- h1.logo Mabel#[span .]
 								h3 Ticketing for the future#[span .]
 								a(href="https://github.com/mabelticketing/mabel" target="_blank").action.one #[span.fa.fa-code] #[span.words Download]
 								a(href="#whatmain").action.two #[span.fa.fa-angle-down]&nbsp;#[span.words Learn&nbsp;more]
 							//- Please add alternate suggestions below:
 							//- h3 Your time's worth more than that.
 							//- h3 I bet you didn't even realise your ticketing system was crap.
-
-							//- .titlebox
-							//- 	.mabel-logo
-							//- 		h1 Mabel
-
-							//- 	p.big-central-text #[b Mabel] is a modern ticketing
-							//- 		|  system designed especially for your May Ball, June
-							//- 		|  Event or Garden Party. It is easy to use, and gives
-							//- 		|  your committee the power to quickly do everything 
-							//- 		|  it needs to.
+						.col-md-6.screenshot-mobile
+							p [Screenshots on a mac or something here]
 
 					div.bg(style="background-image:url(assets/img/bg2.jpg)")
 			section#whatmain
@@ -38,15 +29,15 @@ html
 					h2 What can Mabel do?
 					// TODO: Better colours
 					.row
-						.col-sm-4.whatbox
+						.col-md-4.whatbox
 							span.fa.fa-rocket.icon1
 							h4 Rock-solid speed
 							p Mabel will handle hundreds of simultaneous users without breaking a sweat. So you can rest easy on launch night knowing nothing can go wrong.
-						.col-sm-4.whatbox
+						.col-md-4.whatbox
 							span.fa.fa-moon-o.icon2
 							h4 On the night
 							p No one likes queueing, which is why we’ve integrated a super fast ticket scanning system. Your guests will be through the door in record time.
-						.col-sm-4.whatbox
+						.col-md-4.whatbox
 							span.fa.fa-paint-brush.icon3
 							h4 Make Mabel yours
 							p It’s easy to style Mabel to look exactly the way you want to, so your event’s theme can shine through when your guests buy their tickets.
@@ -62,22 +53,26 @@ html
 				.container
 					h3 More Features
 					.row
-						.col-sm-6.whatboxsm
-							span.fa.fa-ticket
-							h4 Customisable ticket types
+						.col-md-6.whatboxsm
+							.title
+								span.fa.fa-ticket
+								h4 #[span.h  Customisable ticket types]
 							p Queue-jump? Dining? Punting? Early bird? Our admin panel allows you to create as many ticket types as you can think of, and restrict exactly who can buy them.
-						.col-sm-6.whatboxsm
-							span.fa.fa-mobile
-							h4 Mobile
+						.col-md-6.whatboxsm
+							.title
+								span.fa.fa-mobile
+								h4 #[span.h  Mobile]
 							p We optimise Mabel for mobile, so students can book their tickets from the comfort of the college library.
 					.row
-						.col-sm-6.whatboxsm
-							span.fa.fa-lightbulb-o
-							h4 Intelligent Authentication
+						.col-md-6.whatboxsm
+							.title
+								span.fa.fa-lightbulb-o
+								h4 #[span.h Intelligent Authentication]
 							p Mabel can use any authentication system you like. Raven support is built-in, and it is easy to extend Mabel to handle alumni or your college's own login system.
-						.col-sm-6.whatboxsm
-							span.fa.fa-calendar-check-o
-							h4 Separate ticket release dates
+						.col-md-6.whatboxsm
+							.title
+								span.fa.fa-calendar-check-o
+								h4 #[span.h  Separate ticket release dates]
 							p If you want to release tickets to your college before the rest of the university, you can!
 			section#using
 				.container
@@ -85,7 +80,6 @@ html
 					.row
 						.col-md-offset-2.col-md-8
 							p(style="text-align:center") There are three ways to use Mabel. You can obtain the source code for free from our #[a(href="#") GitHub repository]—but then you’re on your own. If that sounds like too much trouble, we can do it for you instead.
-						
 					.row
 						.col-md-4
 							div.pricing-card
@@ -121,14 +115,13 @@ html
 				.container
 					h2 Creators
 					.row
-						.col-sm-12.col-md-3.col-md-offset-3.thumb
+						.col-xs-6.col-md-4.thumb.col-md-offset-2
 							img(src="/assets/img/tom.jpg")
-						.col-sm-12.col-md-3.thumb
+						.col-xs-6.col-md-4.thumb
 							img(src="/assets/img/chris.jpg")
 
-
 					.row
-						.col-sm-12.col-md-6.col-md-offset-3.big-central-text
+						.col-xs-12.col-md-8.col-md-offset-2.big-central-text
 							p Christopher and Tom are Computer Scientists at Emmanuel College. Both love pretty things, hate wasted time and can’t get enough JavaScript.
 							p TODO: Emphasise May Ball experience more
 			section#more
