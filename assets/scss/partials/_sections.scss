@@ -22,9 +22,6 @@ header .container {
     text-align: left;
     font-size: 6em;
     letter-spacing: -0.07em;
-    span {
-      color: $col--highlight;
-    }
   }
 
   h3 {
@@ -132,32 +129,30 @@ section {
 
 
 #more {
-  font-size: 2em;
   text-align: center;
-  background-color: $col--mabel-orange;
+  background-color: $col--azur-light-blue;
 
   p {
     font-family: $font--headings;
-    color: $col--black;
-    text-transform: uppercase;
+    color: $col--white;
     font-weight: bold;
+    font-size: 24px;
   }
 
   a.mail-link {
     text-decoration: underline;
-    color: $col--black !important;
+    color: $col--white !important;
   }
 }
 
 footer {
-  background-color: $col--dark-grey;
-  color: $col--light-grey;
-  height: 40px;
+  background-color: $col--azur-dark-blue;
+  height: 42px;
 
   p {
     text-align: center;
-    margin: 17px;
-    margin-bottom:0;
+    color: $col--very-light-grey;
+    margin: 9px;
     font-size: 12px;
   }
 

@@ -4,22 +4,22 @@
 
 body {
 	font-family: $font--main;
-	color: $col--main-text;
+	color: $col--azur-light-blue;
 }
 
 .fa {
-	color: $col--title;
+	color: $col--azur-dark-blue;
 }
 
 p {
 	font-size: 13px;
 	line-height: 24px;
-	color: $col--main-text;
+	color: $col--azur-light-blue;
 }
 
 h1, h2, h3, h4 {
 	font-family: $font--headings;
-	color: $col--title;
+	color: $col--azur-dark-blue;
 }
 
 h2 {
@@ -39,23 +39,16 @@ h3 {
 	text-align: center;
 }
 
-// h2::before {
-// 	content: "";
-// 	position: absolute;
-// 	left: 50%;
-// 	bottom: 0;
-// 	height: 1px;
-// 	width: 100px;
-// 	border-bottom: 1px solid black;
-// 	margin-left: -50px;
-// }
-
 a {
 	text-decoration: none;
-	color: $col--highlight;
+	color: $col--azur-dark-blue;
 }
 
 a:hover, a:active {
-	color: $col--highlight;
+	color: $col--azur-dark-blue;
 	text-decoration: underline;
+}
+
+span.red {
+	color: $col--azur-orange;
 }

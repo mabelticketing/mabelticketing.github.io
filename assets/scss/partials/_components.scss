@@ -23,21 +23,12 @@
     line-height: 50px;
     text-align: center;
     vertical-align: middle;
+    background-color: $col--azur-orange;
   }
 
   p {
     font-size: 13px;
     line-height: 24px;
-  }
-
-  .icon1 { 
-    background-color: $col--flat-highlight;
-  }
-  .icon2 { 
-    background-color: $col--flat-dark-blue;
-  }
-  .icon3 { 
-    background-color: $col--mint-green;
   }
 }
 
@@ -156,6 +147,7 @@
   margin-top: 40px;
   text-align: center;
   border: 1px solid $col--light-grey;
+  border-radius: 4px;
   padding-bottom: 15px;
 
   h6 {
@@ -163,7 +155,7 @@
   }
 
   p {
-    color: $col--main-text;
+    color: $col--azur-light-blue;
   }
 
   hr {
@@ -186,4 +178,9 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center bottom;
+}
+
+p.blanked {
+  text-decoration: line-through;
+  color: $col--light-grey;
 }

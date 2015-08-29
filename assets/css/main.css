@@ -2292,19 +2292,19 @@ input[type="button"].btn-block {
   src: url("../fonts/Montserrat-Bold.ttf") format("truetype"); }
 body {
   font-family: "Montserrat", sans-serif;
-  color: #2980B9; }
+  color: #009393; }
 
 .fa {
-  color: #2C3E50; }
+  color: #00585F; }
 
 p {
   font-size: 13px;
   line-height: 24px;
-  color: #2980B9; }
+  color: #009393; }
 
 h1, h2, h3, h4 {
   font-family: "Montserrat", sans-serif;
-  color: #2C3E50; }
+  color: #00585F; }
 
 h2 {
   margin-top: 0;
@@ -2322,11 +2322,14 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #ff6600; }
+  color: #00585F; }
 
 a:hover, a:active {
-  color: #ff6600;
+  color: #00585F;
   text-decoration: underline; }
+
+span.red {
+  color: #FF3800; }
 
 .ghost-button, .ghost-button:visited {
   padding: 4px;
@@ -2372,8 +2375,6 @@ header .container {
     text-align: left;
     font-size: 6em;
     letter-spacing: -0.07em; }
-    header .container h1.logo span {
-      color: #ff6600; }
   header .container h3 {
     text-align: left;
     color: #ECF0F1;
@@ -2453,26 +2454,24 @@ section {
   background-color: transparent; }
 
 #more {
-  font-size: 2em;
   text-align: center;
-  background-color: #ff6600; }
+  background-color: #009393; }
   #more p {
     font-family: "Montserrat", sans-serif;
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold; }
+    color: white;
+    font-weight: bold;
+    font-size: 24px; }
   #more a.mail-link {
     text-decoration: underline;
-    color: black !important; }
+    color: white !important; }
 
 footer {
-  background-color: #505050;
-  color: #c8c8c8;
-  height: 40px; }
+  background-color: #00585F;
+  height: 42px; }
   footer p {
     text-align: center;
-    margin: 17px;
-    margin-bottom: 0;
+    color: #f4f4f4;
+    margin: 9px;
     font-size: 12px; }
   footer a, footer a:hover, footer a:active {
     text-decoration: underline;
@@ -2499,16 +2498,11 @@ footer {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    vertical-align: middle; }
+    vertical-align: middle;
+    background-color: #FF3800; }
   .whatbox p {
     font-size: 13px;
     line-height: 24px; }
-  .whatbox .icon1 {
-    background-color: #FF6B5C; }
-  .whatbox .icon2 {
-    background-color: #2980B9; }
-  .whatbox .icon3 {
-    background-color: #3CE78B; }
 
 .whatboxsm {
   text-align: left; }
@@ -2596,11 +2590,12 @@ footer {
   margin-top: 40px;
   text-align: center;
   border: 1px solid #c8c8c8;
+  border-radius: 4px;
   padding-bottom: 15px; }
   .pricing-card h6 {
     color: #2C3E50; }
   .pricing-card p {
-    color: #2980B9; }
+    color: #009393; }
   .pricing-card hr {
     width: 60%; }
 
@@ -2615,6 +2610,10 @@ footer {
   background-size: cover;
   background-attachment: fixed;
   background-position: center bottom; }
+
+p.blanked {
+  text-decoration: line-through;
+  color: #c8c8c8; }
 
 .screenshot-mobile {
   display: none; }
